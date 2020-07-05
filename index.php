@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<body ng-app="newApp">
 <body ng-app="sumod">
 <header><a href="/angular_controllers">Homepage</a></header><br>
 
@@ -21,6 +22,8 @@
     <div class="ng-view"></div><br>
 
 </div>
+
+
 
 <script src="app/route.js"></script>
 <script src="app/controllers/newController.js"></script>
