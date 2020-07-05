@@ -10,4 +10,7 @@ while($row = $result -> fetch_assoc()){
 
 $data['data'] = $json;
 echo json_encode($data);
+
+header('Content-Type:application/json');
+
 ?>
