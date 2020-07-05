@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+  <form name="myForm">
+    <div ng-controller="newController">
+      <input type="text" name="myName" id="" ng-model="name" placeholder="name"><br>
+      <input type="email" name="myEmail" ng-model="email" placeholder="email"><br>
+      <span ng-show="myForm.myEmail.$error.email">Not a valid e-mail address</span><br> <!--Email validation-->
+      <input type="submit" ng-click="onClick()" value="submit">
+      <pre>Name: {{name}} </pre>
+      <pre>Email: {{email}} </pre>
+    </div>
+  </form>
+  
+</body>
+</html>
